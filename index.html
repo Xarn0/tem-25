@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <ul class="header__list header__list-style">
+            <li class="header__item"><img src="./image/icon/logo.svg" alt="logo"></li>
+            <li class="header__item header__item-mainheading">Women Men</li>
+            <li class="header__item">Our Heritage</li>
+            <li class="header__item">Care</li>
+            <li class="header__item">Collections</li>
+            <li class="header__item">Responsibility</li>
+            <li class="header__item header__item-arrow" v-on:click="showArrow" id="arrow">
+                    {{msg}}
+                 <img v-if="activeElementArrow"   src="./image/icon/header_arrow.svg" alt="">
+                 <img v-else class="header__arrow-reverse"  src="./image/icon/header_arrow.svg" alt="">
+                 <template v-if="!activeElementArrow" >
+                    <div class="header__content_arrow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorem rem quam, praesentium hic quia at sunt eos optio incidunt cumque!
+                    </div>
+                 </template>
+                 
+                
+                </li>
+            <li class="header__item header__item-basket "><img src="./image/icon/basket.svg" alt="basket"></li>
+            
+        </ul>
+    </header>
+    <main class="main">
+        <div class="Endless">
+            <div class="Endless__item">
+                <div class="Endless__text Endless__text-span">
+                    FW22 collection
+                </div>
+                <div class="Endless__text Endless__text-h3">
+                    An Endless Pursuit of Nature
+                </div>
+                <div class="Endless__text Endless__text-lorem">
+                    In 1853 Ole Andreas Devold embarked on his journey, and since then our wool has been formed in the roughest conditions. Today, we build on our tradition of mastering wool. Relying on our dedication to craftmanship, we develop the finest quality from the most robust material. Crafted to withstand storms and to comfort on late summer nights. With profound care for nature, we create knitwear that lasts, that can be passed on – a legacy for times to come.
+                </div>
+            </div>
+            <div class="Endless__item">
+                <div class="Endless__img">
+                    <img src="./image/background_header.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer"></footer>
+   
+<script src="./js/vue.js"></script>
 </body>
 </html>
