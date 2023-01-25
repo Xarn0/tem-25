@@ -1,6 +1,8 @@
 @import "_font.scss";
 
 $color_font_project : #6889A5;
+$color_text : #EBECDC;
+$padding_text-Endless: 150px;
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +13,7 @@ $color_font_project : #6889A5;
 .header {
     background-color: $color_font_project;
     padding-top: 20px;
+    padding-bottom: 45px;
     &__list {
         display: flex;
         justify-content: space-between;
@@ -72,6 +75,7 @@ $color_font_project : #6889A5;
     background-color: $color_font_project;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__item {
         flex: 1;
@@ -79,17 +83,35 @@ $color_font_project : #6889A5;
     }
 
     &__text {
+       
+
+    }
+    &__item-first{
+         padding-top:$padding_text-Endless;
+        padding-left:$padding_text-Endless ;
     }
 
     &__text-span {
+        font-size: 13px;
+        color: $color_text ;
+        margin-bottom: 35px;
     }
 
     &__text-h3 {
+        font-size: 48px;
+        color: $color_text ;
+        line-height: 57px;
+        margin-bottom: 50px;
+        width: 247px;
     }
 
     &__text-lorem {
         max-width: 370px;
         min-width: 320px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align-last: left;
+        color:$color_text ;
     }
     &__item:last-child{
         // width: 600px;
@@ -106,6 +128,100 @@ $color_font_project : #6889A5;
             text-align: right;
            
         }
+    }
+}
+
+.Endless {
+    padding-bottom: 64px;
+    &__item {
+    }
+
+    &__item-first {
+    }
+
+    &__text {
+    }
+
+    &__text-span {
+    }
+
+    &__text-h3 {
+    }
+
+    &__text-lorem {
+    }
+
+    &__img {
+    }
+}
+.Best {
+
+    &_Selling {
+    }
+}
+.Best_Selling {
+    color: #2D1E1E;
+    &__heading {
+    }
+
+    &__list {
+        border-bottom: 1px solid #2D1E1E;
+        display: flex;
+    }
+
+    &__item {
+        width: 280px;
+        margin: 0 8px;
+    }
+    &__item:first-child {
+        margin-left: 16px;
+    }
+    &__item:last-child{
+        margin-right: 16px;
+    }
+    &__img {
+        width: 280px;
+        img{
+            max-width: 100%;
+        }
+    }
+
+    &__specifications {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 56px;
+        
+        font-size: 16px;
+    }
+
+    &__made {
+        font-size: 13px;
+        line-height: 20px;
+        text-transform: uppercase;
+        height: 105px;
+        p{
+             max-width: 200px;
+        }
+        
+    }
+    &__madeHeading{
+         width: 56px;  
+    }
+    &__sizeSelection {
+        display: flex;
+        text-transform: uppercase;
+
+    }
+    
+    &__sizeSelectionItem{
+        margin: 0 10px;
+    }
+    &__sizeSelectionItem-disable{
+        color: #CAC7B8;
+
+    }
+    &__sizeSelectionItem:first-child{
+        margin-left: 0;
     }
 }
 

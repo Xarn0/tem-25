@@ -1,0 +1,19 @@
+{
+  "name": "tem25",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xouli/tem-25.git"
+  },
+  "author": "xouli <xouli@list.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xouli/tem-25/issues"
+  },
+  "homepage": "https://github.com/Xouli/tem-25#readme"
+}
